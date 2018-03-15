@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能投顾</title>
+</head>
+<body>
+
+<p>本周 {{ stock_name }} {{ perf }}, 预计下周 {{ predict_pred }}</p>
+<h5>重要新闻</h5>
+{% for n in news %}
+<p>{{ n }}</p>
+{% endfor %}
+
+
+</body>
+</html>
