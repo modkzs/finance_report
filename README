@@ -2,3 +2,7 @@
 1. deploy scrapy (by wuzhida)
 2. develop web html (by wangsu)
 3. learning flask and explore some algorithm (by wuchen)
+
+example is a scrapy example craw 同花顺, it will be replace by a full scrapy service, includeing deploy and scray news
+serice is data process generating data used by web server to show reporter, which will be replaced by EasyML
+the others are flask web service code 
