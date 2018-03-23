@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智能投研系统</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-admin-theme.css" rel="stylesheet" media="screen">
+    <link href="css/news.css" rel="stylesheet" media="screen">
+</head>
+<body class="bootstrap-admin-with-small-navbar">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top " role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">智能投研</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">资讯中心</a></li>
+                    <li><a href="#">证券管理</a></li>
+                    <li><a href="#">数据中心</a></li>
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索资讯、数据或研究">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">链接</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">个人资料</a></li>
+                            <li><a href="#">账户中心</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- left, vertical navbar & content -->
+    <div class="row">
+        <!-- left, vertical navbar -->
+        <div class="col-md-2 bootstrap-admin-col-left">
+            <div class="stock-info stock-info-width">
+                <div class="stock-title">
+                    <div class="stock-name">紫光股份</div>
+                    <div class="stock-id">000938</div>
+                </div>
+                <!--<div class="stock-operation">-->
+                <!--<span><i class="ic ic-add-s-w add-focus-btn-person" title="加自选"></i> </span>-->
+                <!--</div>-->
+            </div>
+            <input type="text" class="form-control input-sm stock-info-width" placeholder="输入证券简称或代码切换个股">
+            <ul class="nav navbar-collapse collapse bootstrap-admin-navbar-side">
+                <li>
+                    <a href="#">概览</a>
+                </li>
+                <li class="active">
+                    <a href="new.html">新闻</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">公告<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="#">全部公告</a></li>
+                        <li><a href="#">权益变动</a></li>
+                        <li><a href="#">重要股东买卖</a></li>
+                        <li><a href="#">限售股解禁</a></li>
+                        <li><a href="#">股票增发</a></li>
+                        <li><a href="#">分红送转</a></li>
+                        <li><a href="#">业绩预告</a></li>
+                        <li><a href="#">大宗交易</a></li>
+                        <li><a href="#">高管变化</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">财务数据<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="#">财务摘要</a></li>
+                        <li><a href="#">资产负债表</a></li>
+                        <li><a href="#">利润表</a></li>
+                        <li><a href="#">现金流量表</a></li>
+                        <li><a href="#">主营构成表</a></li>
+                    </ul>
+                </li>
+                <li class="disabled">
+                    <a href="#">同业公司对比</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">关系图谱</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">智能财务模型</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">分析模型</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">PE/PB Band</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">分析期预期</a>
+                </li>
+                <li>
+                    <a href="#">研究历史</a>
+                </li>
+                <li class="disabled">
+                    <a href="#">关联数据</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div class="col-md-10">
+            <div class="row">
+                <div class="stock-news-list">
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                    <div class="stock-news-item">
+                        <div class="news-time pull-left">03-19</div>
+                        <div class="news-source pull-right ellipsis">
+                            <a href="http://stock.stockstar.com/JC2018031900001010.shtml" title="证券之星" target="_blank">证券之星</a>
+                        </div>
+                        <div class="news-title ellipsis">
+                            <a href="information/news/42753180" title="辰安科技:签订海外大单,业绩更添保障">辰安科技:签订海外大单,业绩更添保障</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li class="disabled"><span class="ellipsis">...</span></li>
+                        <li><a href="#">40</a></li>
+                        <li><a href="#">41</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
