@@ -1,0 +1,55 @@
+.navbar-brand{
+    font-size: 18px;
+}
+.navbar-nav{
+    font-size: 16px;
+}
+.stock-news-list{
+    line-height: 28px;
+}
+.stock-news-item:nth-child(odd){
+    background-color: #f1f1e3;
+}
+.stock-news-item div a{
+    color: #0e0e0e;
+}
+.stock-news-item div a:hover{
+    color: #0e90d2;
+}
+.news-time{
+    width: 10%;
+    text-align: center;
+    margin: 0 10px;
+}
+.news-source{
+    width: 20%;
+    text-align: center;
+    margin: 0 10px;
+}
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+.stock-info{
+    background-color: #619ef1;
+    color: #ffffff;
+    padding: 8px 0 10px;
+    height: 90px;
+}
+.stock-info-width{
+    max-width: 228px;
+    text-align: center;
+}
+.stock-operation .stock-info{
+    margin-top: 5px;
+}
+.stock-name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.stock-id{
+    font-size: 14px;
+    opacity: .8;
+}
